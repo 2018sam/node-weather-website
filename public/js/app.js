@@ -19,6 +19,7 @@ weatherForm.addEventListener('submit',(e)=>{
                     document.querySelector("#error").textContent = "";
                     document.querySelector("#location").textContent = data.location
                     document.querySelector('#weather').textContent = data.weather.temp+"F";
+                    document.querySelector('#weathericon').innerHTML = "<img src='"+data.weather.icon+"'>";
                }
             })
         })
